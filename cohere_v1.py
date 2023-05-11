@@ -55,7 +55,7 @@ if uploaded_file :
     # Storing data inside the pinecone index
     st.write("Storing data inside the pinecone index...")
         # add a seperating line
-    st.write("------------------------------------------------------------------")
+    
     import pinecone 
     from langchain.vectorstores import Pinecone
 
@@ -69,6 +69,7 @@ if uploaded_file :
 
     # create the index
     st.write("Creating the index...")
+    st.write("------------------------------------------------------------------")
     # cache the index
     # @st.cache_data(show_spinner=True)
     docsearch = Pinecone.from_documents(data, vec, index_name=index_name)
