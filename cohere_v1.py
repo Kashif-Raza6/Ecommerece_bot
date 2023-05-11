@@ -13,7 +13,7 @@ import os
 
 
 # Adding the Title of the app
-st.title("Ecommerece MultiLingual Chatbot 🤖")
+st.title("Ecommerece Multi-Lingual Chatbot 🤖")
 
 
 user_api_key = st.sidebar.text_input(
