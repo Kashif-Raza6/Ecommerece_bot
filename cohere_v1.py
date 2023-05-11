@@ -67,7 +67,7 @@ if uploaded_file :
     # create the index
     st.write("Creating the index...")
     # cache the index
-    @st.cache_data(show_spinner=True)
+    # @st.cache_data(show_spinner=True)
     docsearch = Pinecone.from_documents(data, vec, index_name=index_name)
 
     # Embeddings
