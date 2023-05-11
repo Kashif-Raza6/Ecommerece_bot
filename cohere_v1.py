@@ -10,8 +10,10 @@ import tempfile
 import pandas as pd
 from langchain.agents import create_pandas_dataframe_agent
 import os
-from langchain.llms import OpenAI
 
+
+# Adding the Title of the app
+st.title("Ecommerece MultiLingual Chatbot 🤖")
 
 
 user_api_key = st.sidebar.text_input(
@@ -39,8 +41,7 @@ if uploaded_file :
     import cohere
     cohere_api_key = user_api_key
 
-    # Adding the Title of the app
-    st.title("Ecommerece MultiLingual Chatbot 🤖")
+
 
     # Data loading
     st.write("Loading data...")
@@ -53,6 +54,8 @@ if uploaded_file :
 
     # Storing data inside the pinecone index
     st.write("Storing data inside the pinecone index...")
+        # add a seperating line
+    st.write("------------------------------------------------------------------")
     import pinecone 
     from langchain.vectorstores import Pinecone
 
