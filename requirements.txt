@@ -5,7 +5,6 @@ pillow
 transformers
 torch
 bs4
-Flask
-flask_restful
+streamlit-chat
 cohere
 pinecone-client
